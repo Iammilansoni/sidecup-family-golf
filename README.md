@@ -22,7 +22,7 @@ A visually engaging clone of the SideCup Family Golf website built using **HTML,
 ✅ **Optimized for Performance** – Lightweight and efficient event listeners.  
 
 ## Demo
-You can check out the live demo here: **[Live Demo](#)** *(Replace with actual link once hosted.)*
+You can check out the live demo here: **[Live Demo](https://sidecup-family-golf-orcin.vercel.app/)** 
 
 ![Project Preview](screenshot.png) *(Replace with actual preview image.)*
 
@@ -97,4 +97,4 @@ This project is licensed under the **MIT License**.
 
 ## Contact
 🔹 **Milan Soni**  
-- **GitHub:** [@Iammilansoni](https://github.com/Iammilansoni) *(Replace with actual username)*
+- **GitHub:** [@Iammilansoni](https://github.com/Iammilansoni) 
