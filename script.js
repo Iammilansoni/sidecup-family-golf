@@ -6,11 +6,7 @@ const blur = document.getElementById("cursor-blur");
 
 document.addEventListener("mousemove", (event) => {
     let { x, y } = event;
-
-    // Move cursor instantly
     cursor.style.transform = `translate(${x}px, ${y}px)`;
-
-    // Smooth blur movement
     gsap.to(blur, {
         x: x - 250,
         y: y - 250,
@@ -33,7 +29,7 @@ gsap.to("#nav", {
     },
 });
 
-// Main Background Change
+// Page Background Change
 gsap.to("#main", {
     backgroundColor: "#000",
     scrollTrigger: {
@@ -59,7 +55,49 @@ gsap.from(".card", {
     },
 });
 
-// 3D Effect on Hover
+// 🔥 Page 3: Colon Image Animation (Move Closer to Paragraph)
+gsap.from("#colon1", {
+    y: -70,
+    x: -70,
+    scrollTrigger: {
+      trigger: "#colon1",
+      scroller: "body",
+      // markers:true,
+      start: "top 55%",
+      end: "top 45%",
+      scrub: 4,
+    },
+  });
+  gsap.from("#colon2", {
+    y: 70,
+    x: 70,
+    scrollTrigger: {
+      trigger: "#colon1",
+      scroller: "body",
+      // markers:true,
+      start: "top 55%",
+      end: "top 45%",
+      scrub: 4,
+    },
+  });
+
+// Page 4 h1 Smooth Animation
+gsap.from("#page4 h1", {
+    opacity: 0,
+    y: 50,
+    duration: 1.5,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#page4 h1",
+        scroller: "body",
+        start: "top 80%",
+        end: "top 60%",
+        scrub: 2,
+    },
+});
+
+
+// 3D Effect on Hover for Cards
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('mousemove', (e) => {
         let rect = card.getBoundingClientRect();
